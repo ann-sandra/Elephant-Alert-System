@@ -2,7 +2,7 @@
 """
 Created on Mon Aug 12 13:48:08 2019
 
-@author: Arulg
+
 """
 
 # import the necessary packages
