@@ -117,9 +117,31 @@ dataset/
 5. **Output Layer:**  
    - Binary classification (elephant or not).
 
-    <img src="image/CNN.png" alt="CNN" width="400"/> 
+    <img src="image/CNN.png" alt="CNN" width="400"/>
 
-### **Model Evaluation**
+---
+
+## **Training and Testing**
+### **Training Pipeline**
+1. Extract features using the selected method (SIFT, SURF, HOG, or ORB).
+2. Train the CNN on the preprocessed dataset.
+3. Evaluate the model using test images.
+
+### **Testing and Predictions**
+1. **Image Prediction:** 
+   - Classifies test images into "elephant" or "other".
+   - Saves results in output folders.
+2. **Video Prediction:** 
+   - Processes video frames and predicts elephant presence.
+   - Visualizes results with bounding boxes for detected elephants.
+
+### **Output Logging**
+- **Real-Time Alarm System:** Triggers an alarm if an elephant is detected based on log files.
+- **Confusion Matrix:** Used to calculate and log accuracy, precision, recall, and F1-score.
+
+---
+
+## **Model Evaluation**
 - **Metrics:** Precision, Recall, F1-Score, Accuracy
 - ### Results Overview
 
@@ -156,26 +178,6 @@ dataset/
   - ORB: **0.75 Sensitivity**
   - <img src="image/orbroc.png" alt="ORB ROC" width="400"/>
   - We choose SIFT as the FPR increment is linear with increase in TPR till 85% hence we will be able to get a better accuracy compared to SURF and ORB where the increase in FPR does not increase the TPR after 70% leading to lower accuracy. Hence, SIFT with a threshold of 85% is chosen as ideal with high TPR and minimal FPR.
-
----
-
-## **Training and Testing**
-### **Training Pipeline**
-1. Extract features using the selected method (SIFT, SURF, HOG, or ORB).
-2. Train the CNN on the preprocessed dataset.
-3. Evaluate the model using test images.
-
-### **Testing and Predictions**
-1. **Image Prediction:** 
-   - Classifies test images into "elephant" or "other".
-   - Saves results in output folders.
-2. **Video Prediction:** 
-   - Processes video frames and predicts elephant presence.
-   - Visualizes results with bounding boxes for detected elephants.
-
-### **Output Logging**
-- **Real-Time Alarm System:** Triggers an alarm if an elephant is detected based on log files.
-- **Confusion Matrix:** Used to calculate and log accuracy, precision, recall, and F1-score.
 
 ---
 
