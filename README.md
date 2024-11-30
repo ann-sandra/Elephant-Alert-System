@@ -29,6 +29,18 @@ The dataset contains images categorized into two classes:
 - **Elephant:** Images of elephants captured from open-source repositories.
 - **Other:** Images of non-elephant objects or backgrounds for model training.
 
+### **Dataset Structure**
+```plaintext
+dataset/
+│
+├── input/
+    ├── images/
+        ├── elephant/
+        └── other/
+
+```
+
+
 ### **Input Directories**
 - `input/images/elephant`: Contains elephant images.
 - `input/images/other`: Contains non-elephant images.
@@ -133,8 +145,8 @@ The dataset contains images categorized into two classes:
 | **Feature Detection Method** | **Accuracy** | **Sensitivity** | **Specificity** |
 |------------------------------|--------------|-----------------|-----------------|
 | SIFT + CNN                   | 85%          | 0.85            | 0.90            |
-| SURF + CNN                   | 75%          | 0.75            | 0.80            |
-| ORB + CNN                    | 75%          | 0.75            | 0.80            |
+| SURF + CNN                   | 75%          | 0.75            | 0.70            |
+| ORB + CNN                    | 75%          | 0.75            | 0.70            |
 
 ---
 
@@ -147,16 +159,25 @@ The dataset contains images categorized into two classes:
 
 ---
 
-## **Dataset Structure**
-```plaintext
-dataset/
-│
-├── input/
-    ├── images/
-        ├── elephant/
-        └── other/
+## **Prediction Functions**
+### **Image Prediction**
+- **`predictTestImages`**: Classifies input images as "elephant" or "other" and saves the results in respective folders.
 
-```
+### **Video Prediction**
+1. **`predictTestVideoSamples`**  
+   - Converts video frames into grayscale and predicts elephant presence for each frame.
+2. **`predictVideoSamples`**  
+   - Processes video samples in real time and visualizes results with bounding boxes.
+
+### **Output Logging**
+- **`writeToFile`**: Writes detection results to a file, which can trigger an alarm if an elephant is detected.
+
+---
+
+## **Key Findings**
+1. SIFT-CNN demonstrated the highest accuracy (**85%**) for elephant detection.
+2. Low-power Raspberry Pi is effective for real-time edge computing.
+3. Robust feature extraction techniques like SIFT and HOG enhance detection capabilities.
 
 ---
 
