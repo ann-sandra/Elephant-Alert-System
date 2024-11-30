@@ -117,7 +117,7 @@ dataset/
 5. **Output Layer:**  
    - Binary classification (elephant or not).
 
-<img src="image/CNN.png" alt="CNN" width="400"/> 
+    <img src="image/CNN.png" alt="CNN" width="400"/> 
 
 ### **Model Evaluation**
 - **Metrics:** Precision, Recall, F1-Score, Accuracy
