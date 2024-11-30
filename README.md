@@ -73,6 +73,14 @@ dataset/
 
 ---
 
+## **Utility Functions**
+1. **`load_base(fn)`**: Loads the dataset from the specified folder.
+2. **`get_images(mypath, hogVal, x, y)`**: Reads and prepares grayscale images for training.
+3. **`draw_rect(image)`**: Draws bounding boxes around detected features for visualization.
+4. **`writeToFile(fd, file, txt)`**: Logs detection results to a file for further processing.
+
+---
+
 ## **Feature Detection Techniques**
 ### 1. **SIFT (Scale-Invariant Feature Transform)**
    - Extracts scale and rotation invariant features.
@@ -137,14 +145,6 @@ dataset/
 - **ROC Curve:** Used to visualize model performance with a threshold of:
   - SIFT: **0.85 Sensitivity**
   - SURF and ORB: **0.75 Sensitivity**
-
----
-
-## **Utility Functions**
-1. **`load_base(fn)`**: Loads the dataset from the specified folder.
-2. **`get_images(mypath, hogVal, x, y)`**: Reads and prepares grayscale images for training.
-3. **`draw_rect(image)`**: Draws bounding boxes around detected features for visualization.
-4. **`writeToFile(fd, file, txt)`**: Logs detection results to a file for further processing.
 
 ---
 
