@@ -172,10 +172,10 @@ project/
 ---
 
 ## **Future Enhancements**
-Improve model accuracy using more advanced neural network architectures.
-Expand the dataset with additional elephant and non-elephant images.
-Implement a mobile application for real-time alerts and monitoring.
-Integrate IoT-based alarm systems for remote areas.
+1. Improve model accuracy using more advanced neural network architectures.
+2. Expand the dataset with additional elephant and non-elephant images.
+3. Implement a mobile application for real-time alerts and monitoring.
+4. Integrate IoT-based alarm systems for remote areas.
 
 ---
 
