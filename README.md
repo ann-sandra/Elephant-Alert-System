@@ -109,29 +109,29 @@ dataset/
 - **Metrics:** Precision, Recall, F1-Score, Accuracy
 - ### Results Overview
 
-#### SIFT
-- **Confusion Matrix:** `[[8 2], [1 9]]`
-- **Accuracy Score:** 0.85
-- **Metrics:**
-  - Precision: 0.85
-  - Recall: 0.85
-  - F1-Score: 0.85
+    #### SIFT
+    - **Confusion Matrix:** `[[8 2], [1 9]]`
+    - **Accuracy Score:** 0.85
+    - **Metrics:**
+      - Precision: 0.85
+      - Recall: 0.85
+      - F1-Score: 0.85
 
-### SURF
-- **Confusion Matrix:** `[[8 2], [3 7]]`
-- **Accuracy Score:** 0.75
-- **Metrics:**
-  - Precision: 0.75
-  - Recall: 0.75
-  - F1-Score: 0.75
-
-### ORB
-- **Confusion Matrix:** `[[8 2], [3 7]]`
-- **Accuracy Score:** 0.75
-- **Metrics:**
-  - Precision: 0.75
-  - Recall: 0.75
-  - F1-Score: 0.75
+    #### SURF
+    - **Confusion Matrix:** `[[8 2], [3 7]]`
+    - **Accuracy Score:** 0.75
+    - **Metrics:**
+      - Precision: 0.75
+      - Recall: 0.75
+      - F1-Score: 0.75
+    
+    #### ORB
+    - **Confusion Matrix:** `[[8 2], [3 7]]`
+    - **Accuracy Score:** 0.75
+    - **Metrics:**
+      - Precision: 0.75
+      - Recall: 0.75
+      - F1-Score: 0.75
 
 
 - **SIFT** performed the best with an accuracy of **0.85**.
