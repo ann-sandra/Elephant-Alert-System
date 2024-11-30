@@ -169,11 +169,11 @@ dataset/
 ---
 
 ## **Performance Comparison**
-| **Feature Detection Method** | **Accuracy** | **Sensitivity** | **Specificity** |
-|------------------------------|--------------|-----------------|-----------------|
-| SIFT + CNN                   | 85%          | 0.85            | 0.90            |
-| SURF + CNN                   | 75%          | 0.75            | 0.70            |
-| ORB + CNN                    | 75%          | 0.75            | 0.70            |
+| **Feature Detection Method** | **Accuracy** | **Sensitivity** | 
+|------------------------------|--------------|-----------------|
+| SIFT + CNN                   | 85%          | 0.85            | 
+| SURF + CNN                   | 75%          | 0.75            | 
+| ORB + CNN                    | 75%          | 0.75            | 
 
 ---
 
