@@ -150,11 +150,11 @@ dataset/
 
 - **ROC Curve:** Used to visualize model performance with a threshold of:
   - SIFT: **0.85 Sensitivity**
-  - <img src="image/siftroc.png" alt="SIFT ROC" width="250"/> 
+  - <img src="image/siftroc.png" alt="SIFT ROC" width="400"/> 
   - SURF: **0.75 Sensitivity**
-  - <img src="image/surfroc.png" alt="SURF ROC" width="250"/>
+  - <img src="image/surfroc.png" alt="SURF ROC" width="400"/>
   - ORB: **0.75 Sensitivity**
-  - <img src="image/orbroc.png" alt="ORB ROC" width="250"/> 
+  - <img src="image/orbroc.png" alt="ORB ROC" width="400"/> 
 
 ---
 
