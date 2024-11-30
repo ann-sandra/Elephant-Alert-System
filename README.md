@@ -147,9 +147,9 @@ The dataset contains images categorized into two classes:
 
 ---
 
-## **Project Directory Structure**
+## **Dataset Structure**
 ```plaintext
-project/
+dataset/
 │
 ├── input/
     ├── images/
