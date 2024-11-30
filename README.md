@@ -154,7 +154,8 @@ dataset/
   - SURF: **0.75 Sensitivity**
   - <img src="image/surfroc.png" alt="SURF ROC" width="400"/>
   - ORB: **0.75 Sensitivity**
-  - <img src="image/orbroc.png" alt="ORB ROC" width="400"/> 
+  - <img src="image/orbroc.png" alt="ORB ROC" width="400"/>
+  - We choose SIFT as the FPR increment is linear with increase in TPR till 85% hence we will be able to get a better accuracy compared to SURF and ORB where the increase in FPR does not increase the TPR after 70% leading to lower accuracy. Hence, SIFT with a threshold of 85% is chosen as ideal with high TPR and minimal FPR.
 
 ---
 
