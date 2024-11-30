@@ -152,21 +152,10 @@ The dataset contains images categorized into two classes:
 project/
 │
 ├── input/
-│   ├── images/
-│   │   ├── elephant/
-│   │   └── other/
-│
-├── src/
-│   ├── train.py
-│   ├── predict.py
-│   ├── utils.py
-│   ├── model.py
-│
-├── output/
-│   ├── predictions/
-│   ├── logs/
-│
-└── README.md
+    ├── images/
+        ├── elephant/
+        └── other/
+
 ```
 
 ---
