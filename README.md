@@ -85,21 +85,21 @@ dataset/
 ### 1. **SIFT (Scale-Invariant Feature Transform)**
    - Extracts scale and rotation invariant features.
    - Most reliable method with **85% accuracy** when paired with CNN.
-   - <img src="image/sift.png" alt="SIFT" width="250"/>
+   - <img src="image/sift.png" alt="SIFT" width="400"/>
 
 ### 2. **SURF (Speed-Up Robust Features)**
    - Optimized SIFT using box filters for faster computation.
    - Accuracy: **75%**.
-   - <img src="image/surf.png" alt="SURF" width="250"/>
+   - <img src="image/surf.png" alt="SURF" width="400"/>
 
 ### 3. **HOG (Histogram of Oriented Gradients)**
    - Decomposes images into cells, computes gradients, and normalizes for feature extraction.
-   - <img src="image/hog.png" alt="HOG" width="250"/>
+   - <img src="image/hog.png" alt="HOG" width="400"/>
    
 ### 4. **ORB (Oriented FAST and Rotated BRIEF)**
    - A binary descriptor for fast and robust object detection.
    - Accuracy: **75%**.
-   - <img src="image/orb.png" alt="ORB" width="250"/>
+   - <img src="image/orb.png" alt="ORB" width="400"/>
 
 ---
 
@@ -117,7 +117,7 @@ dataset/
 5. **Output Layer:**  
    - Binary classification (elephant or not).
 
-<img src="image/CNN.png" alt="CNN" width="250"/> 
+<img src="image/CNN.png" alt="CNN" width="400"/> 
 
 ### **Model Evaluation**
 - **Metrics:** Precision, Recall, F1-Score, Accuracy
