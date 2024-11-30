@@ -107,9 +107,9 @@ dataset/
 
 ### **Model Evaluation**
 - **Metrics:** Precision, Recall, F1-Score, Accuracy
-- ## Results Overview
+- ### Results Overview
 
-### SIFT
+#### SIFT
 - **Confusion Matrix:** `[[8 2], [1 9]]`
 - **Accuracy Score:** 0.85
 - **Metrics:**
@@ -137,7 +137,7 @@ dataset/
 - **SIFT** performed the best with an accuracy of **0.85**.
 - **SURF** and **ORB** both achieved an accuracy of **0.75**, with similar metric scores.
 
----
+
 
 - **ROC Curve:** Used to visualize model performance with a threshold of:
   - SIFT: **0.85 Sensitivity**
