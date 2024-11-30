@@ -1,7 +1,7 @@
 # **Detection of Wild Elephants Using Image Processing on Raspberry Pi**
 
 ## **Introduction**
-Elephant populations are increasingly encroaching into human habitats due to dwindling natural resources like food and water, resulting in severe human-elephant conflicts. To address this issue, this project implements an automated elephant detection system using image processing techniques on a Raspberry Pi. By integrating feature detection methods with a Convolutional Neural Network (CNN), the project provides a scalable, low-cost solution for real-time monitoring of elephants at forest borders.
+Elephant populations are increasingly encroaching into human habitats in India due to dwindling natural resources like food and water, resulting in severe human-elephant conflicts. To address this issue, this project implements an automated elephant detection system using image processing techniques on a Raspberry Pi. By integrating feature detection methods with a Convolutional Neural Network (CNN), the project provides a scalable, low-cost solution for real-time monitoring of elephants at forest borders.
 
 The system's primary goal is to detect elephants accurately and trigger necessary alerts to prevent conflicts, thus preserving both human safety and wildlife.
 
@@ -142,7 +142,6 @@ dataset/
 ---
 
 ## **Model Evaluation**
-- **Metrics:** Precision, Recall, F1-Score, Accuracy
 - ### Results Overview
 
     #### SIFT
@@ -172,30 +171,29 @@ dataset/
 
 - **ROC Curve:** Used to visualize model performance with a threshold of:
   - SIFT: **0.85 Sensitivity**
-  - <img src="image/siftroc.png" alt="SIFT ROC" width="400"/> 
   - SURF: **0.75 Sensitivity**
-  - <img src="image/surfroc.png" alt="SURF ROC" width="400"/>
   - ORB: **0.75 Sensitivity**
-  - <img src="image/orbroc.png" alt="ORB ROC" width="400"/>
-  - We choose SIFT as the FPR increment is linear with increase in TPR till 85% hence we will be able to get a better accuracy compared to SURF and ORB where the increase in FPR does not increase the TPR after 70% leading to lower accuracy. Hence, SIFT with a threshold of 85% is chosen as ideal with high TPR and minimal FPR.
 
----
-
-## **Performance Comparison**
+### **Performance Comparison**
 | **Feature Detection Method** | **Accuracy** | **Sensitivity** | 
 |------------------------------|--------------|-----------------|
 | SIFT + CNN                   | 85%          | 0.85            | 
 | SURF + CNN                   | 75%          | 0.75            | 
 | ORB + CNN                    | 75%          | 0.75            | 
 
----
-
 ## **Visualization**
 ### **ROC Curve:**
 - Receiver Operating Characteristic plot visualizes TPR vs. FPR for binary classification.
 - Threshold:
   - **SIFT-CNN:** 0.85
-  - **SURF/ORB-CNN:** 0.75
+  - <img src="image/siftroc.png" alt="SIFT ROC" width="400"/> 
+  - **SURF-CNN:** 0.75
+  - <img src="image/surfroc.png" alt="SURF ROC" width="400"/>
+  - **ORB-CNN:** 0.75
+  - <img src="image/orbroc.png" alt="ORB ROC" width="400"/>
+    
+  -  We choose SIFT as the FPR increment is linear with increase in TPR till 85% hence we will be able to get a better accuracy compared to SURF and ORB where the increase in FPR does not increase the TPR after 75% leading to lower accuracy.
+  - Hence, SIFT with a threshold of 85% is chosen as ideal with high TPR and minimal FPR.
 
 ---
 
